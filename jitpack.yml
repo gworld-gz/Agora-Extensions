@@ -1,7 +1,5 @@
-jdk:
-  - openjdk9
 before_install:
-  - ./custom_setup.sh
+  - ./jitpack_custom_setup.sh
 install:
   - echo "Running a custom install command"
   - ./VideoCapture/Android/gradlew clean -xtest install
